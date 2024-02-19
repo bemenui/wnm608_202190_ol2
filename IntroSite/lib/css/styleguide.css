@@ -1,23 +1,28 @@
-
 /* CSS RESET */
 
-* , *::after, *::before {
+*, *::after, *::before {
 	box-sizing: boarder-box;
 }
 
 
-:root {
+: root {
 
 	--color-neutral-light:#eee;
 	--color-neutral-medium:#999;
 	--color-neutral-dark:#555;
 
+	--color-black:#000;
+	--color-white:#fff;
+
+
     --header-height:3rem;
     --spacing:1rem;
 }
 
+
 body {
-	margin:0;
+
+    margin:0;
 	font-size:100%;
 	font-family:Helvetica, Arial, sans-serif;
 }
@@ -33,13 +38,53 @@ h6 {
 }
 
 a {
-	color: inherit;
-	font-weight:b old;
-	text-decoration: none;
-
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
 }
 
 a:hover {
 
-	text-decoration: underline;
+	text-decoration:underline;
 }
+
+/*LAYOUT CLASSES*/
+
+.container {
+
+	max-width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	margin:0 auto;
+} 
+
+.display-flex {display:flex;}
+.display-inline-flex {display:inline-flex;}
+.display-block {display:block;}
+.display-inline-block {display:inline-block;}
+
+.flex-stretch {flex: 1 1 auto;}
+.flex-none {flex: none;}
+
+.felx-align-center {align-items:center;}
+.flex-justify-center {justify-content:center; }
+
+
+/* COMPONENT CLASSES */
+
+.nav ul { 
+list-style-type:none;
+margin-top:0;
+margin-bottom:0;
+padding-left:0;
+
+}
+
+.navbar{
+
+	background-color:pink;
+	font-color: grey;
+	color:var(--color-white);
+	line-height:var(--header-height);
+}
+
