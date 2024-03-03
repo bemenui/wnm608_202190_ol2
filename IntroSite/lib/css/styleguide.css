@@ -88,3 +88,15 @@ padding-left:0;
 	line-height:var(--header-height);
 }
 
+.view-window {
+
+	height:50vh;
+	position:relative;
+	overflow:hidden;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	
+}
+
+
