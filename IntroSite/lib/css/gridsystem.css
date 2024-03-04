@@ -4,6 +4,11 @@
 	grid-template-columns: repeat(12, 1fr);
 }
 
+.grid.ten {
+
+	grid-template-columns: repeat(10, 1fr)
+}
+
 .grid.gap {
 
 	--grid-gap:1em;
@@ -20,6 +25,7 @@
 .gap.xs-medium { --grid-gap:1em } 
 .gap.xs-small { --grid-gap:0.5em }
 
+.col-xs-0{ display: none }
 .col-xs-1{ grid-column: span 1; }
 .col-xs-2{ grid-column: span 2; }
 .col-xs-3{ grid-column: span 3; }
@@ -40,6 +46,7 @@
 .gap.sm-medium { --grid-gap:1em } 
 .gap.sm-small { --grid-gap:0.5em }
 
+.col-sm-0{ display: none }
 .col-sm-1{ grid-column: span 1; }
 .col-sm-2{ grid-column: span 2; }
 .col-sm-3{ grid-column: span 3; }
@@ -60,6 +67,7 @@
 .gap.md-medium { --grid-gap:1em } 
 .gap.md-small { --grid-gap:0.5em }
 
+.col-md-0{ display: none }
 .col-md-1{ grid-column: span 1; }
 .col-md-2{ grid-column: span 2; }
 .col-md-3{ grid-column: span 3; }
@@ -80,6 +88,7 @@
 .gap.lg-medium { --grid-gap:1em } 
 .gap.lg-small { --grid-gap:0.5em }
 
+.col-lg-0{ display: none }
 .col-lg-1{ grid-column: span 1; }
 .col-lg-2{ grid-column: span 2; }
 .col-lg-3{ grid-column: span 3; }
@@ -100,6 +109,7 @@
 .gap.xl-medium { --grid-gap:1em } 
 .gap.xl-small { --grid-gap:0.5em }
 
+.col-xl-0{ display: none }
 .col-xl-1{ grid-column: span 1; }
 .col-xl-2{ grid-column: span 2; }
 .col-xl-3{ grid-column: span 3; }
