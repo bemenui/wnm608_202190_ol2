@@ -11,8 +11,7 @@
 	<link rel="stylesheet" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" href="../css/storetheme.css">
-	<link rel="stylesheet" href="../css/img/GREEN.jpg">
-
+	
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -100,27 +99,69 @@
 </div>
 
 <div class="container">
+	<div class="grid gap xs-small md-medium">
+		<!--.col-xs-6.col-md-3*4>.card>{Card} -->
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container">
+
 
 	<h2>Cards</h2>
 
-	<div class="grid gap"> </div>
-		<div class="col-xs-12 col-md-4">
+	<div class="grid gap"></div>
+	<div class="col-xs-12 col-md-4">
 			<div class="card">Card</div>
 		</div>
+
+
 		<div class="col-xs-12 col-md-4">
 			<div class="card soft">Card Soft</div>
 		</div>
+
+
 		<div class="grid gap">
 		<div class="col-xs-12 col-md-4">
 			<div class="card hard">Card Hard</div>
 
 		</div>
+
+
 		<div class="col-xs-12 col-md-4">
 			<div class="card flat">Card flat</div>
 		</div>
+
+
 		<div class="col-xs-12 col-md-4">
 			<div class="card dark">Card Dark</div>
 		</div>
+
+
 		<div class="col-xs-12 col-md-4">
 			<div class="card medium">Card Medium</div>
 		</div>
@@ -208,56 +249,13 @@
 	</div>
 
 
-		<div class="container">
-			<h2>Grid System</h2>
-		</div>
-
-		<div class="container">
-		<h2>Flex System</h2>		
-	</div>
-
-	<script>
-
-		const makeTable = (classes='') => {
-
-			const head = ['ID','Office','Name','Email','Phone'];
-			const body = [
-
-['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-
-	];
-			//let ran = Math.floor(Math.random()*links.length);
-document.write(`
-		
-		<table class="${classes}">
-		<thead><tr>${head.reduce((r,o)=> r+`<th>${o}</th>`,'')}</tr></thead>
-		<tbody>${body.reduce((r,o,i)=>r+
-			<tr>${
-				[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
-			}</tr>`,'')
-		}</tbody>
-		</table>
-		`;
-	
-		}
-
-	</script>
-
-	<div class="container">
-		<h2>Tables</h2>
-
-<script>makeTable("table")</script>
-	</div>
 
 <h2 id="figures">Figures</h2>
- class="card">
-
+ 
+	
 	<h3>Basic Figure</h3>
-	<figure class="figure">
+	<div class="col-xs-12 col-md-4">
+		<figure class="figure">
 		<img src="https://via.placeholder.com/400x400?text=product" alt="">
 		<figcaption>Product</figcaption>
 	</figure>
@@ -289,14 +287,14 @@ document.write(`
 		</div>
 
 </div>
-</div>
+
 
 <h3>Product Grid</h3>
 
 	<div class="grid gap">
 		<div class="col-xs-12 col-md-4">
 			<figure class="figure product">
-		<img src="GREEN.jpg" alt="main green">
+		<img src="https://via.placeholder.com/400x400?text=product" alt="main green">
 		<figcaption>
 
 				<div> Product Name </div>
@@ -326,7 +324,9 @@ document.write(`
 
 		</figcaption>
 	</figure>
+		
 		</div>
+	</div>
 
 		<div class="container" id="forms">
 			
@@ -477,7 +477,9 @@ document.write(`
 			<span>&equiv;</span>
 			<input type="search" placeholder="Search">
 
+
 		</form>
+
 
 	</div>
 </div>
@@ -516,6 +518,139 @@ document.write(`
 <div class="toggle">
 	<input type="checkbox" id="Toggle-1" class="hidden">
 	<label for="Toggle-1"></label>
+
+</div>
+
+</div>
+
+<div class="card soft">
+
+	<h3>Icons</h3>
+<svg class="icon" width="20px" height="20px">
+	
+<div class="display-flex">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.87 110.16">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .52px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #736357;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #736357;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .52px;
+      }
+
+      .cls-3 {
+        fill: #ccc;
+        stroke-width: .42px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <g>
+        <rect class="cls-1" x="25" y="49.7" width="45" height="35.2"/>
+        <polygon class="cls-1" points=".61 49.7 48.4 .37 96.19 49.7 .61 49.7"/>
+      </g>
+      <rect class="cls-2" x="44.11" y="64.9" width="8" height="15"/>
+    </g>
+  </g>
+</svg>
+
+
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.94 107.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #995a24;
+        stroke: #736357;
+        stroke-width: .29px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #8cc63f;
+        stroke: #d9e021;
+        stroke-width: .34px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <rect class="cls-1" x="35.42" y="55.53" width="51.64" height="51.64" rx="10.8" ry="10.8"/>
+      <g>
+        <path class="cls-3" d="m55.44,53.78c-4.65-3.86,3.68-23.11,14.68-35.56C77.77,9.56,90.57-.18,95.04,2.99c3.94,2.8.42,14.94-3.13,22.34-9.29,19.4-31.37,32.7-36.48,28.45Z"/>
+        <path class="cls-3" d="m61.91,55.35c-5.22,3.05-20.46-11.36-28.39-25.96C28,19.24,23.22,3.88,27.73.76c3.98-2.75,14.18,4.72,19.92,10.58,15.05,15.36,19.99,40.66,14.25,44.01Z"/>
+        <path class="cls-3" d="m60.65,57.42c-2.29,5.6-23.15,3.42-38.32-3.34C11.77,49.37-1.37,40.07.32,34.85c1.49-4.6,14.13-4.88,22.25-3.71,21.29,3.05,40.59,20.12,38.08,26.27Z"/>
+        <path class="cls-3" d="m60.97,55.8c-1.88-5.74,15.42-17.6,31.36-22.28,11.09-3.26,27.12-4.68,29.21.38,1.85,4.47-7.6,12.87-14.54,17.24-18.19,11.47-43.96,10.97-46.03,4.66Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.21 70.47">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .21px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #96cce5;
+        stroke: #736357;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .21px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <path class="cls-2" d="m13.61.39c-3.82,14.16-7.64,28.32-11.45,42.48-1.59,4.68-3.66,13.35-.04,21.99.45,1.07.96,2.07,1.5,3,.96.69,3.88,2.61,8,2.5,4.53-.12,7.5-2.63,8.5-3.5,4.28-3.73,4.88-8.77,5-10-.46-5.54-1.11-11.38-2-17.49-.87-5.98-1.89-11.66-3-16.99C17.94,15.05,15.78,7.72,13.61.39Z"/>
+      <path class="cls-2" d="m48.61,4.41c-3.82,13.35-7.64,26.7-11.45,40.04-1.59,4.41-3.66,12.58-.04,20.73.45,1.01.96,1.95,1.5,2.83.96.65,3.88,2.46,8,2.36,4.53-.11,7.5-2.48,8.5-3.3,4.28-3.51,4.88-8.26,5-9.42-.46-5.22-1.11-10.73-2-16.49-.87-5.64-1.89-10.99-3-16.02-2.17-6.91-4.33-13.82-6.5-20.73Z"/>
+      <path class="cls-2" d="m85.61,4.41c-3.82,13.35-7.64,26.7-11.45,40.04-1.59,4.41-3.66,12.58-.04,20.73.45,1.01.96,1.95,1.5,2.83.96.65,3.88,2.46,8,2.36,4.53-.11,7.5-2.48,8.5-3.3,4.28-3.51,4.88-8.26,5-9.42-.46-5.22-1.11-10.73-2-16.49-.87-5.64-1.89-10.99-3-16.02-2.17-6.91-4.33-13.82-6.5-20.73Z"/>
+    </g>
+  </g>
+</svg>
+
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 107">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #736357;
+        stroke: #736357;
+        stroke-miterlimit: 10;
+        stroke-width: .17px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <rect class="cls-1" x="54.03" y="41.48" width="123.88" height="23.79"/>
+      <polygon class="cls-1" points="22.52 72.78 64.7 106.83 64.7 .18 .13 53.5 22.52 72.78"/>
+    </g>
+  </g>
+</svg>
+
+<div class="cards soft">
+
+
+</div>
+
 
 </div>
 </body>
