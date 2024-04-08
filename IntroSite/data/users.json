@@ -1,0 +1,63 @@
+[
+	
+
+	{
+
+		"name": "Brittney Mendoza",
+		"type": "Student",
+		"email": "bmendoza10@art.edu",
+		"classes":[608]
+
+	},
+
+	{
+
+
+		"name": "Greg Brady",
+		"type": "Oldest boy",
+		"email": "gbrady60@bradyhouse.com",
+		"classes":[608]
+
+	},
+
+	{
+		"name": "Marcia Brady",
+		"type": "Oldest girl",
+		"email": "mbrady62@bradyhouse.com",
+		"classes":[608]
+
+	},
+
+	{
+
+
+		"name": "Peter Brady",
+		"type": "Middle boy",
+		"email": "pbrady64@bradyhouse.com",
+		"classes":[608]
+
+
+	},
+
+	{
+		"name": "Jan Brady",
+		"type": "Middle girl",
+		"email": "jbrady64@bradyhouse.com",
+		"classes":[608]
+	},
+
+	{
+
+		"name": "Bobby Brady",
+		"type": "Youngest boy",
+		"email": "bbrady67@bradyhouse.com",
+		"classes":[608]
+	},
+	{
+
+		"name": "Cindy Brady",
+		"type": "Youngest girl",
+		"email": "cbrady67@bradyhouse.com",
+		"classes":[608]
+	}
+]
