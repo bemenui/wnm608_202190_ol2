@@ -1,10 +1,8 @@
-# wnm608_202190_ol2
-WNM 608 OL2
 # Brittney Mendoza
 
-Welcome to my Site:
 
-My first intro to GitHub!
+-http://brittneymendoza.com/AAU/WNM608MOD1/index.html
+-http://brittneymendoza.com/AAU/WNM608MOD1/index.html/styleguide
 
-
-
+-http://brittneymendoza.com/AAU/WNM608MOD1/notes/reading_data.php
+-http://brittneymendoza.com/AAU/WNM608MOD1/admin/users.php
