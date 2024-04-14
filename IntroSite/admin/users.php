@@ -3,8 +3,9 @@
 include "../lib/php/functions.php";
 
 
+$filename = "../data/users.json";
 
-$users = file_get_json("../data/users.json");
+$users = file_get_json($filename);
 
 //file_put_contents json_encode  explode $_POST
 
@@ -12,7 +13,50 @@ $users = file_get_json("../data/users.json");
 
 
 
+if(isset($_GET['action'])) {
+	switch($_GET['action']) {
+		case "update":
+
+	$users[$_GET['id']]->name= $_POST['user-name'];
+	$users[$_GET['id']]->type= $_POST['user-type'];
+	$users[$_GET['id']]->email= $_POST['user-email'];
+	$users[$_GET['id']]->classes= explode(",", $_POST['user-classes']);
+
+	file_put_contents($filename,json_encode($users));
+
+	header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+	break;
+
+	case "create":
+		break;
+
+		case "delete":
+		break;
+
+
+
+	}
+
+}
+
+
+
+if(isset($_POST['user-name'])) {
+
+	$users[$_GET['id']]->name= $_POST['user-name'];
+	$users[$_GET['id']]->type= $_POST['user-type'];
+	$users[$_GET['id']]->email= $_POST['user-email'];
+	$users[$_GET['id']]->classes= explode(",", $_POST['user-classes']);
+
+	file_put_contents($filename,json_encode($users));
+
+
+}
+
+
 function showUserPage($user) {
+
+	$id = $_GET['id'];
 
 	$classes = implode(", ", $user->classes);
 	//heredoc
@@ -30,49 +74,33 @@ function showUserPage($user) {
 
 
 
-		<div>
+		<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=update">
 
-		Name:<input placeholder="Child's name">
-
-		Type: <input placeholder="Sibling type">
-
-		Email: <input placeholder="child@bradyhouse.com">
-
-		<ul>
-
-		<li><a href="admin/index.php">Submit</a></li>
-
-		</ul>
-
-
-
-			<h2>$user->name</h2>
-
-
-
-		<strong>Type</strong>
-
-		<span>$user->type</span>
-
+		<div class="form-control">
+			<label class="form-label" for="user-name">Name</label>
+			<input class="form-input" name="user-name" id="user-name" type="text" value="$user->name" placeholder="Enter the User Name">
 		</div>
 
-
-		<div>
-
-		<strong>Email</strong>
-
-		<span>$user->email</span>
-
-		</div>
-		<div>
-
-		<strong>Classes</strong>
-
-		<span>$classes</span>
-
+		<div class="form-control">
+			<label class="form-label" for="user-type">Type</label>
+			<input class="form-input" name="user-type" id="user-type" type="text" value="$user->type" placeholder="Enter the User Type">
 		</div>
 
+		<div class="form-control">
+			<label class="form-label" for="user-email">Email</label>
+			<input class="form-input" name="user-email" id="user-email" type="text" value="$user->email" placeholder="Enter the User Email">
 		</div>
+
+		<div class="form-control">
+			<label class="form-label" for="user-classes">Classes</label>
+			<input class="form-input" name="user-classes" id="user-classes" type="text" value="$classes" placeholder="Enter the User Classes">   
+		</div>
+
+		<div class="form-button">
+			<input class="form-button" type="submit" value="Save Changes">
+
+			</div>
+		</form>
 
 		HTML; 
 
