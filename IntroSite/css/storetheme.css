@@ -27,7 +27,24 @@ body {
 	transform:scale(1.7,1.7);
 }
 
+.figure.product {
 
+
+	border-radius:0.5em;
+	box-shadow:0 2px 5px rgba(0,0,0,0.1);
+
+overflow: hidden;
+
+height: 100%;
+}
+
+.product.figure img{
+
+	height: 100%;
+	object-fit: contain;
+
+	
+}
 
 
 
