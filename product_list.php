@@ -14,7 +14,10 @@
 
 <div class="Container">
 
+	<div class="card soft">
+
 	
+
 
 		<h2>Product List</h2>
 
@@ -38,13 +41,15 @@
 
 		);
 
-		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplates'), "</div>";
+		echo "<div class='productList grid gap'>",array_reduce($result,'productListTemplates'), "</div>";
 
 			?>
 
 </div>
+</div>
+
 
 	
 </body>
 </html>
-</html>
+
