@@ -1,6 +1,7 @@
 /* CSS RESET */
 
 *,*::after, *::before {
+
 	box-sizing: boarder-box;
 }
 
@@ -73,7 +74,7 @@ a:hover {
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
-
+.flex-column { flex-direction:column }
 /*Small Classes*/
 
 .media-image{
@@ -200,7 +201,7 @@ padding-left: 0;
 }
 
 .navbar a {
-	padding:0 0.05em;
+	padding:0 1.03em;
 }
 
 .view-window {
@@ -218,14 +219,16 @@ padding-left: 0;
 
 .card {
 
-	background-color:#73563999;
+	background-color:#73563922;
 
 	margin-top:1em;
 	margin-bottom:1em;
-	padding:2em;
+	padding:0em;
 
 	overflow: hidden;
 	position: relative;
+	width: 100%;
+
 	;
 
 }
@@ -236,6 +239,15 @@ padding-left: 0;
 	border-radius:0.5em;
 	box-shadow:0 0 10px rgba(0,0,0,0.1);
 
+	margin-top: 72px;
+
+	margin-left: 110px;
+
+	width: 80%;
+
+	height: 60%;
+
+	align-items: stretch;
 }
 
 .card.hard { 
@@ -308,7 +320,7 @@ padding-left: 0;
 
 .form-label{
 	font-size:0.8em;
-	color:var(--color-neutral-medium);
+	color:black;
 	display:block;
 	width:100%;
 }
