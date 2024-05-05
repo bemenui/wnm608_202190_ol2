@@ -1,49 +1,153 @@
-<!DocType html>
+<!DOCTYPE html>
 
-<html lang = "en-us">
-
+<html lang = "en">
 
 <head>
 
-	<title> Travel Smart </title>
+	<meta charset="utf-8">
+
+	<title> Plant Time </title>
+
+	<meta name="viewport" contents="width=device-width">
 
 	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+	<link rel="stylesheet" href="css/img/GREEN.jpg">
+
+</head>
 
 
-<body>
-
+<body> 
 <!-- header>h1+p -->
 
 <header class="navbar">
 
 	<div class="container display-flex">
-		<div class="flex-none">
+		<div class="flex-none"> </div>
 
-		<h1>A Brighter Way to Baggage</h1>
+		<h1>Plant Time</h1>
 
 	</div>
 		
 		<div class="container flex-stretch"></div>
 		<nav class="flex-none nav">
 		<ul class="container display-flex">
-			<li><a href="#article1">Bags</a></li>
-			<li><a href="#article2">Pouches</a></li>
-			<li><a href="#article3">Wallets</a></li>
-			<li><a href="#article4">Backpacks</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="product_list.php">Plants</a></li>
+			<li><a href="pots.html">Pots</a></li>
+			<li><a href="styleguide/product_cart.php">Cart</a></li>
 		</ul>
 		</nav>
 	</div>
+
+
 </div>
+
 
 </header>
 
+
+
+<div class="container">
+
+	<div class="card soft">
+		<h2>Grid</h2>
+		
+		<div class="grid">
+		
+			<div class="col-xs-6">column 6</div>
+			<div class="col-xs-6">column 6</div>
+		
+		</div>
+			<div class="grid gap xs-small md-medium">
+		
+			<div class="col-xs-4">column 4</div>
+			<div class="col-xs-4">column 4</div>
+			<div class="col-xs-4">column 4</div>
+		
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+		
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-6">column 6</div>
+			<div class="col-xs-3">column 3</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="card soft">
+		<h2>Responsive Grid</h2>
+		<div class="grid">
+		
+			<div class="col-xs-12 col-md-6">column 6</div>
+			<div class="col-xs-12 col-md-6">column 6</div>
+		
+		</div>
+			<div class="grid">
+		
+			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+			<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+			<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+		
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+			<div class="col-xs-3">column 3</div>
+		</div>
+
+		<div class="grid ten gap">
+			<div class="col-xs-2">column 2</div>
+			<div class="col-xs-2">column 2</div>
+			<div class="col-xs-2">column 2</div>
+			<div class="col-xs-2">column 2</div>
+			<div class="col-xs-2">column 2</div>
+			<div class="col-xs-2">column 2</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="grid gap xs-small md-medium">
+		<!--.col-xs-6.col-md-3*4>.card>{Card} -->
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+			<div class="card soft">
+				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+			</div>
+		</div>
+
+	</div>
+</div>
 <!-- .container>article#article$.article*4>h2{Article $}+div.artice-body>p*3>lorem40 -->
 
 <div class="container">
-	<article id="article1" class="article">
+	<article id="article1" class="article card soft">
 		<div class="display-flex flex-align-center">
 			<div class="flex-stretch">
-				<h2>How You Can Inhance Your Trip</h2>
+				<h2>Article 1 </h2>
 			</div>
 			<div class="flex-none">
 				<small>Welcome</small>
@@ -55,40 +159,43 @@
 			
 		</div>
 	</article>
-	<article id="article2" class="article">
-		<h2>Bags</h2>
+	<article id="article2" class="article card hard">
+		<h2>Plants</h2>
 		<div class="article-body">
-			<p>Our bags are made with quality weather proof material that is stretch, tear, and stain resistant.</p>
-			<p>The bags also come with built in tracking, and multiple carring options.</p>
-			<p>As our bags are made to store large quantities while providing comfort, we have incorporated an accordian fabric flap that allows the bag to widen without causing pressure points.</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
+			<p>Tipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan.</p>
 		</div>
 	</article>
 
 </div>
-<div class="view-window" style="background-image:url('img/stock_baggage.jpeg">
+<div class="view-window" style="background-image:url('img/stockplants.png')">
 
 </div>
 
 <div class="container">
 	<article id="article3" class="article">
-		<h2>Pouches</h2>
+		<h2>Species</h2>
 		<div class="article-body">
-			<p>The pouches are a great option for a wallet substitute or a durable makeup, tech, or accessory pouch.</p>
-			<p>Available in many colors, the pouches are made to be a set with bags or backpacks, but they also function as their own piece. </p>
-			<p>A great on-the-go option!</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan </p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
 		</div>
 	</article>
 	<article id="article4" class="article">
-		<h2>Wallets</h2>
+		<h2>Pots</h2>
 		<div class="article-body">
-			<p>Our singular wallet is made to handle dirt, pressure, and most importantly, theft!</p>
-			<p>With a sewed in tracking device, anytime this wallet is misplaced or taken, there will be a way to locate it through our app.</p>
-			<p>These wallets are also made to protect your card data from potential scanners.</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
+			<p>ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blan</p>
+			<p>Tipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies arcu justo, consequat facilisis odio facilisis eu. Nulla ac ex leo. Nam condimentum sapien at justo molestie, sagittis tempus tellus tempor. In interdum mauris nec laoreet rhoncus. Suspendisse dictum metus tellus, non posuere est suscipit id. Nunc maximus, dolor at rutrum mattis, arcu augue blandit arcu, vitae consequat lorem ex sed leo. Aenean cursus odio volutpat elit volutpat, ac blans.</p>
 		</div>
 	</article>
 </div>
 
 </body>
+
+</html> 
+
 
 
 
