@@ -34,7 +34,7 @@
 			SELECT * 
 			FROM products
 
-			ORDER BY date_create DESC 
+			ORDER BY date_create DESC
 
 			LIMIT 12
 			"
@@ -47,6 +47,12 @@
 
 </div>
 </div>
+
+
+	
+</body>
+</html>
+
 
 
 	
