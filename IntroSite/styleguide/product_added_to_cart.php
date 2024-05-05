@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Product Item</title>
-<?php include "../parts/meta.php"; ?>
+	
+	<title>Confirmation Page</title>
 
-</head>
-<body>
+	<?php include "../parts/meta.php"; ?>
 
+	</head>
+	<body>
 	<?php include "../parts/navbar.php"; ?>
-</header>
 
-
-
-<div class="Container">
+	<div class="Container">
 
 	<div class="card soft">
 
-		<h2>You added ____ to your cart!</h2>
+		<h2>You added this item to your cart!</h2>
+
+		<p> There are now items in your cart</p>
 
 		<div class="display-flex">
 
@@ -29,11 +28,15 @@
 			<div class="flex-none"><a href="styleguide/product_cart.php">Go to Cart</a></div>
 
 
-	</div>
-</div>
 
-</div>
+
+
+	</div>
+	</div>
+
+	</div>
 
 	
-</body>
-</html>
+	</body>
+
+	</html>
