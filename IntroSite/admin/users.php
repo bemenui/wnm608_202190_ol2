@@ -116,7 +116,6 @@ function showUserPage($user) {
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>User Admin Page</title>
 <?php include "../parts/meta.php"; ?>
 
@@ -138,7 +137,8 @@ function showUserPage($user) {
 
 				<ul>
 
-					<li><a href="admin/users.php">User List</a></li>
+					<li><a href="<?=$_SERVER['PHP_SELF'] ?>">User List</a></li>
+					<li><a href= "<?=$_SERVER['PHP_SELF'] ?>?id=new">Add New User</a></li>
 
 				</ul>
 
@@ -158,7 +158,7 @@ function showUserPage($user) {
 
 		if(isset($_GET['id'])) {
 
-			showUserPage($users[$_GET['id']]);
+			showProductPage($_GET['id']=="new" ? $empty_user : $users[$_GET['id']]);
 
 		} else {
 
