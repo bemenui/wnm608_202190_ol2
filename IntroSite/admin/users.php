@@ -28,9 +28,25 @@ if(isset($_GET['action'])) {
 	break;
 
 	case "create":
+
+		$empty_user->name= $_POST['user-name'];
+
+		$empty_user->type= $_POST['user-type'];
+		$empty_user->email= $_POST['user-email'];
+		$empty_user->classes= explode(",",$_POST['user-classes']);
+
+		$id = count($users);
+		$users[]=$empty_user;
+
+		file_put_contents($filename,json_encode($users));
+		header(location:{$_SERVER['PHP_SELF']}?id=$id");
 		break;
 
 		case "delete":
+
+			array_splice($users,$_GET['id'],1);
+			file_put_contents($filename,json_encode($users));
+			header("location:{$_SERVER['PHP_SELF']}");
 		break;
 
 
