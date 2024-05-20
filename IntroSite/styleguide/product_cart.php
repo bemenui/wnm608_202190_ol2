@@ -5,6 +5,8 @@
 		
 		include_once "../parts/templates.php";
 
+
+
 //$cart = makeQuery(makeConn(),"SELECT * FROM products WHERE id IN (1,2,3)");
 
 $cart_items = getCartItems(); 
@@ -26,7 +28,7 @@ $cart_items = getCartItems();
 
 <body>
 
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "../parts/navbar2.php"; ?>
 
 	<div class="container">
 
@@ -47,6 +49,9 @@ $cart_items = getCartItems();
 				<div class="card soft flat">
 
 					<?= cartTotals() ?>
+
+
+					<a href="styleguide/product_checkout.php" class="form-button">Checkout</a>
 
 				</div>
 			</div>
