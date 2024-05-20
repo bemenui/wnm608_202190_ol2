@@ -9,7 +9,7 @@
 
 	<?php include "../parts/meta.php"; ?>
 
-	<? include "../parts/navbar.php"; ?>
+	<?php include "../parts/navbar2.php"; ?>
 
 </head>
 
