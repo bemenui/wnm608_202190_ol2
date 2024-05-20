@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+
+		include_once "../lib/php/functions.php";
+
+resetCart();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +15,7 @@
 </head>
 <body>
 
-	<? include "../parts/navbar.php"; ?>
+	<? include "../parts/navbar2.php"; ?>
 
 	<div class="container">
 
