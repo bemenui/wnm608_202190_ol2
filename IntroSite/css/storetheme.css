@@ -101,9 +101,23 @@ font-weight:initial;
 
 }
 
+.menu-button label { display: none; }
 @media (max-width:400px){
 
-	.navbar .display-flex {
+	.navbar .display-flex{
+
+		flex-wrap:wrap;
+	}
+
+	.navbar .nav {
+		width:100%;
+		display:none;
+
+	}
+
+
+	.navbar .nav-flex ul {
+
 		display:block;
 	}
 
@@ -111,7 +125,18 @@ font-weight:initial;
 		line-height:2em;
 
 	}
-}
+	.menu-button label {
+
+	display:block;
+	padding: 0 1 em;
+
+		}	
+
+		#menu:checked+.navbar .nav{
+
+			display:block;
+		}
+	}
 
 .images-main img { 
 
