@@ -10,7 +10,7 @@ body {
 
 	background-color:var(--color-offwhite);
 
-	padding-bottom:4em;
+	padding-bottom:2em;
 }
 
 .favorite label {
@@ -33,17 +33,17 @@ body {
 	border-radius:0.5em;
 	box-shadow:0 2px 5px rgba(0,0,0,0.1);
 
-overflow: hidden;
+	overflow: hidden;
 
-height: 100%;
-transition:all 0.3s;
+	height: 100%;
+	transition:all 0.3s;
 
 
 }
 
 .product.figure img{
 
-	height: 100%;
+	height: 90%;
 	object-fit: fill;
 	
 }
@@ -58,7 +58,7 @@ font-weight:initial;
 
 .product.figure:hover{
 
-	box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .product-overlay {
