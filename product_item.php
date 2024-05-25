@@ -1,7 +1,7 @@
 <?php
 
 		include_once "lib/php/functions.php";
-		 include_once "./parts/templates.php";
+		 include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM products WHERE id =".$_GET['id'])[0];
 
@@ -14,7 +14,7 @@ return $r. "<img src='/img/$o'>";
 });
 
 
-print_p($_SESSION);
+//print_p($_SESSION);
 
 
 ?><!DOCTYPE html>
@@ -132,19 +132,13 @@ print_p($_SESSION);
 
 
 
-	<div class="card soft dark">
+	<div class="card flat dark">
 
 		<p><?= $product->description ?></p>
 
 	</div>
 
-	<h2>Recommended Products</h2>
-
-	<? php
-
-	recommendedSimilar($product->category,$product->id);
-
-	?>
+	
 </div>
 
 	
